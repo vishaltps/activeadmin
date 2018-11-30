@@ -198,6 +198,5 @@ RSpec.describe ActiveAdmin::ViewHelpers::DisplayHelper do
       false_value = format_attribute post, :false_method
       expect(false_value.to_s).to eq "<span class=\"status_tag no\">No</span>\n"
     end
-
   end
 end

@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe ActiveAdmin::Resource::Routes do
-
   after do
     load_defaults!
     reload_routes!
@@ -92,7 +91,6 @@ RSpec.describe ActiveAdmin::Resource::Routes do
     end
 
     context "when register a singular resource" do
-
       let :config do
         ActiveAdmin.register Category
         ActiveAdmin.register Post do
@@ -110,7 +108,6 @@ RSpec.describe ActiveAdmin::Resource::Routes do
     end
 
     context "when registering a plural resource" do
-
       class ::News; def self.has_many(*); end end
       let(:config) { ActiveAdmin.register News }
 
